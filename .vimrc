@@ -43,7 +43,7 @@ if version >= 603
 endif
 
 " 设置配色方案
-colorscheme murphy
+"colorscheme murphy
 
 "字体 
 
@@ -229,10 +229,10 @@ set softtabstop=4
 set shiftwidth=4
 
 " 不要用空格代替制表符
-set noexpandtab
+set expandtab
 
 " 在行和段开始处使用制表符
-set smarttab
+"set smarttab
 
 " 显示行号
 set number
@@ -325,15 +325,6 @@ set smartindent
 " 高亮显示普通txt文件（需要txt.vim脚本）
 au BufRead,BufNewFile *  setfiletype txt
 
-"自动补全
-:inoremap ( ()<ESC>i
-:inoremap ) <c-r>=ClosePair(')')<CR>
-:inoremap { {<CR>}<ESC>O
-:inoremap } <c-r>=ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
 
 function! ClosePair(char)
     if getline('.')[col('.') - 1] == a:char
