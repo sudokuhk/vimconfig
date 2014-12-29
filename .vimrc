@@ -9,6 +9,8 @@ set cindent
 set expandtab
 set nu
 syntax on
+set filetype=c
+color delek
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 显示相关  
